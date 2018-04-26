@@ -1,3 +1,18 @@
-// This file is required by the index.html file and will
-// be executed in the renderer process for that window.
-// All of the Node.js APIs are available in this process.
+let sqlite3 = require('sqlite3').verbose();
+let db = new sqlite3.Database('bd.sqlite');
+
+db.serialize(function() {
+    db.run("CREATE TABLE lorem (info TEXT)");
+
+    let stmt = db.prepare("INSERT INTO lorem VALUES (?)");
+    for (let i = 0; i < 10; i++) {
+        stmt.run("Ipsum " + i);
+    }
+    stmt.finalize();
+
+    db.each("SELECT rowid AS id, info FROM lorem", function(err, row) {
+        console.log(row.id + ": " + row.info);
+    });
+});
+
+db.close();

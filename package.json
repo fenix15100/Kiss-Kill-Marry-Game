@@ -18,5 +18,9 @@
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^1.8.4"
+  },
+  "dependencies": {
+    "electron-rebuild": "^1.7.3",
+    "sqlite3": "4.0.0"
   }
 }
