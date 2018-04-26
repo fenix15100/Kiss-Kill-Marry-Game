@@ -1,3 +1,5 @@
+//node_modules.bin\electron-rebuild para sqlite
+
 const electron = require('electron');
 // Module to control application life.
 const app = electron.app;
@@ -23,7 +25,7 @@ function createWindow () {
   }));
 
   // Open the DevTools.
-  mainWindow.webContents.openDevTools()
+  mainWindow.webContents.openDevTools();
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function () {
