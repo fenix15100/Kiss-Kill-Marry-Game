@@ -2,18 +2,42 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>KISS-MARRY-KILL</title>
+
+    <style>
+
+    </style>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
+
+  <div class="container-fluid">
+    <h1 class="text-primary text-sm-center">KISS-MARRY-KILL</h1>
+
+    <p class="text-muted">Este juego es el indicado cuando tu grupo de amig@s y tu estais tiraos en una casa en plan tranquis
+      y ya no podeis atender a Netflix ya que requiere un focus que por culpa de las drogas ya no teneis.
+      Es en estos momentos cuando un juego sencillo y divertido como este entra en acción.
+    </p>
+
+    <ul>
+      <li>Apareceran 3 imagenes (Previamente habra que cargarlas)</li>
+      <li>Como el titulo del juego indica hay que elegir a quien besarias,te casarias o matarias</li>
+      <li>Los verbos del juego pueden cambiar, estan por defecto estos para ser family-friendly ::youknow XD</li>
+      <li>No hay que hacer absolutamente nada solo expresar al grupo tus deciciones y que empiezen las risas</li>
+      <li>PLS Cargar las fotos prepersist(Antes de hacer cosas malas) o dara mucho palo y dejareis de jugar y morireis</li>
+    </ul>
+
+    <a href="addEntity.html"><button class="btn btn-info">Añadir Imagen</button></a> <a href="addEntity.html"><button class="btn btn-success">Jugar</button></a>
+  </div>
+
+
+
+
+
+
 
     <script>
-      // You can also require other files to run in this process
-      require('./renderer.js')
+      require('./initBD.js');
     </script>
   </body>
 </html>

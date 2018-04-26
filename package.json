@@ -20,7 +20,10 @@
     "electron": "^1.8.4"
   },
   "dependencies": {
+    "bootstrap": "^4.1.0",
     "electron-rebuild": "^1.7.3",
+    "jquery": "^1.9.1",
+    "popper.js": "^1.14.0",
     "sqlite3": "4.0.0"
   }
 }

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Añadir Entidad</title>
+
+    <style>
+
+    </style>
+</head>
+<body>
+
+<div class="container-fluid text-center ">
+
+    <form>
+        <div class="form-group">
+            <label for="NombrePersonaje">Nombre Personaje:</label>
+            <input type="text" class="form-control" id="NombrePersonaje">
+        </div>
+        <div class="form-group">
+            <button id="upload">Selecionar Imagen(PNG)</button>
+        </div>
+        <button type="submit" class="btn btn-default">Guardar</button>
+    </form>
+<br>
+    <a href="index.html"><button class="btn btn-success">Volver al menu principal</button></a>
+</div>
+
+
+<script>
+    require('./addEntity');
+</script>
