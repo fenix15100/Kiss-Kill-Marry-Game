@@ -7,11 +7,11 @@ de ficheros y Base de datos con los modulos de Node.js
 - npm :)
 
 
-######npm install -g node-gyp
+###### npm install -g node-gyp
 
 Windows system:
  Nota: Añadir al Path un interprete de Python 2.7
-######npm install -g windows-build-tools
+###### npm install -g windows-build-tools
 
 Linux system:
 
@@ -19,10 +19,10 @@ Linux system:
 
 ##Instalacion
 
-######npm install
+###### npm install
 
 ##Run app
-######npm start
+###### npm start
 
 
 
