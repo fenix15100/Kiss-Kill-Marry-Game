@@ -21,8 +21,11 @@ Linux system:
 
 ###### npm install
 
-## Run app
+## Run app in dev mode
 ###### npm start
 
+## Deploy binary for your plattaform
+###### npm run dist
 
+Creara el directorio ./dist donde se encontrara el binario
 
