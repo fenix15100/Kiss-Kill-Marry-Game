@@ -1,6 +1,5 @@
 //GLOBALS
 //Importo el modulo sqlite3
-
 let sqlite3 = require('sqlite3').verbose();
 let db=null;
 

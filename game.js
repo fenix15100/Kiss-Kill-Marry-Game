@@ -1,14 +1,18 @@
+//Importo los modulos necesarios
 const sqlite3 = require('sqlite3').verbose();
 const db = new sqlite3.Database('bd.sqlite');
 let $=require('jquery');
+//Array donde guardare las entidades de la base de datos
 let array=[];
 
+//Modelo para recojer los registros de la base de datos
 function Entidad(name,image){
     this.name=name;
     this.image=image;
 }
 
 
+//Obtengo los registros de la base de datos, instancio cada fila a mi modelo y añado el modelo a el array
 db.serialize(function() {
 
     db.each("SELECT name,image FROM Entity", function (err,row) {
@@ -20,12 +24,14 @@ db.serialize(function() {
 db.close();
 
 
+//Cada vez que presiono el boton jugar se ejecuta la funcion get Entity
 $("#jugada").click(function (e) {
     e.preventDefault();
     getEntity();
 
 });
 
+//Mezcla el array de entidades coje 3 elementos y los imprime en pantalla
 function getEntity() {
     $("#gallery").empty();
     $(".container-fluid ul").empty();
@@ -46,15 +52,6 @@ function getEntity() {
 
 }
 
-
-
-
-
-
-//Tipycall random int
-function getRandomArbitrary(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
 
 //Funcion de un pavo porque la mierda de JS no tiene un puto shuffle
 function shuffle(arra1) {

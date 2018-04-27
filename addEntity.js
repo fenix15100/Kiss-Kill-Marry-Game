@@ -1,3 +1,5 @@
+
+//Importo los modulos necesarios
 const fs= require('fs');
 const path = require('path');
 const electron=require('electron');
@@ -8,12 +10,15 @@ let fichero=null;
 let $=require('jquery');
 
 
+//Al presionar el boton #upload creo un filechoser para que elijan una imagen
 $("#upload").click(function (e) {
     e.preventDefault();
    fichero=dialog.showOpenDialog(electron.remote.getCurrentWindow());
 
 });
 
+//Al enviar el formulario vuelco la imagen en un buffer y la paso junto a el nombre del input hacia el modulo de
+//presitencia
 $("form").submit(function (e) {
 
 
@@ -32,6 +37,7 @@ $("form").submit(function (e) {
 
 });
 
+//Recibe la imagen y el nombre, serializa la imagen a Base64 e introduce los datos en la base de datos sqlite
 function saveEntity(data,name){
     $("#NombrePersonaje").val("");
     data=Buffer.from(data).toString('base64');
