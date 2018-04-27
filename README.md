@@ -17,11 +17,11 @@ Linux system:
 
 ###### apt-get/yum .. install build-essentials
 
-##Instalacion
+## Instalacion
 
 ###### npm install
 
-##Run app
+## Run app
 ###### npm start
 
 
