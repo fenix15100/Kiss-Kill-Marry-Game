@@ -1,4 +1,3 @@
-//node_modules.bin\electron-rebuild para sqlite
 
 const electron = require('electron');
 // Module to control application life.

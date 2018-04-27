@@ -1,6 +1,6 @@
 const sqlite3 = require('sqlite3').verbose();
 const db = new sqlite3.Database('bd.sqlite');
-require("./node_modules/jquery/jquery.js");
+let $=require('jquery');
 let array=[];
 
 function Entidad(name,image){

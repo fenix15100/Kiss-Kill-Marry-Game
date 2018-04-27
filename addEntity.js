@@ -5,9 +5,7 @@ const {dialog} = require('electron').remote;
 const sqlite3 = require('sqlite3').verbose();
 let db=null;
 let fichero=null;
-
-
-require("./node_modules/jquery/jquery.js");
+let $=require('jquery');
 
 
 $("#upload").click(function (e) {
