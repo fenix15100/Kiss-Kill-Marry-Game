@@ -1,25 +1,24 @@
 {
-  "name": "electron-quick-start",
+  "name": "Kiss-Kill-Marry-Game",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "Juego para probar el acceso a datos y ficheros de Node utilizando Electron",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/fenix15100/Kiss-Kill-Marry-Game",
   "keywords": [
     "Electron",
-    "quick",
+    "Kiss-Kill-Marry-Game",
     "start",
-    "tutorial",
-    "demo"
+    "sqlite",
+    "Educational"
   ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
-  "devDependencies": {
-    "electron": "^1.8.4"
-  },
+  "author": "fenix15100",
+  "license": "GPLv3",
+  
   "dependencies": {
+    "electron": "^1.8.4",
     "bootstrap": "^4.1.0",
     "electron-rebuild": "^1.7.3",
     "jquery": "^1.9.1",
